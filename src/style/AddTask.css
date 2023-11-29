@@ -58,3 +58,7 @@
   .add-task .forgot-btn:hover {
     color: white !important;
   }
+
+  .btn1{
+    margin-right: 5px;
+  }

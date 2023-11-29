@@ -36,7 +36,6 @@ const Homepage = ({ children }) => {
         if(existingUpTask) setUptask(JSON.parse(existingUpTask));
         let existingdueTask = localStorage.getItem("overduetasks");
         if(existingdueTask) setDuetask(JSON.parse(existingdueTask));
-        console.log(duetask, uptask);
       }, [])
 
   return (

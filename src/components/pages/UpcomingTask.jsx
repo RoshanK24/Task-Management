@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useUptask } from '../context/upcomingTask'
 import { useComptask } from '../context/completedTask';
 import "../../style/Card.css"
-import Layout from '../layout/Layout';
 import Homepage from './Homepage';
 import Close from '/Close.png'
 import "../../style/AddTask.css"
@@ -25,10 +24,10 @@ const UpcomingTask = () => {
 
     const completehandle = (index) => {
         const existingTasks = JSON.parse(localStorage.getItem('upcomingtask')) || [];
+          setComptask(([existingTasks[index], ...comptask]));
         
+        console.log(existingTasks[index], comptask)
         if (index >= 0 && index < existingTasks.length) { 
-          setComptask([existingTasks[index], ...comptask]);
-          console.log(comptask)
           localStorage.setItem('completedtask', JSON.stringify(comptask));
       
           existingTasks.splice(index, 1);
@@ -37,7 +36,7 @@ const UpcomingTask = () => {
           let existingUpTask = localStorage.getItem('upcomingtask');
           if (existingUpTask) setUptask(JSON.parse(existingUpTask));
         }
-        // console.log(index, uptask, comptask); 
+        console.log(index, uptask, comptask); 
       };
       
     const [newTask, setNewTask] = useState({
@@ -94,7 +93,7 @@ const UpcomingTask = () => {
                                     </select>
                                 </div>
                                 <div><input type="checkbox" id="Completed" name="Completed" onChange={()=>completehandle(i)}></input><span> Completed</span></div>
-                                <button className='btn btn-danger' onClick={()=>deleteTask(i)}>Delete</button>
+                                <button className='btn1 btn btn-danger' onClick={()=>deleteTask(i)}>Delete</button>
                                 <button className='btn btn-info' onClick={()=>{setPoptask(false); setEditI(i); console.log(i)}}>Edit</button>
                             </div>
                         </div>

@@ -6,7 +6,7 @@ import "../../style/Card.css"
 const CompletedTask = () => {
     const [comptask, setComptask] = useComptask();
     const deleteTask = (index)=>{
-        console.log(index)
+        
         const existingTasks = JSON.parse(localStorage.getItem('completedtask')) || [];
 
         if (index >= 0 && index < existingTasks.length) {

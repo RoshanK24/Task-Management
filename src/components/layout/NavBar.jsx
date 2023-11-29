@@ -48,7 +48,7 @@ const Navbar = () => {
                     }
                     {
                         task? (<></>):(
-                            <div style={{ position: "absolute", right: "37%", top: "20%", width:"380px", zIndex:"5"}}>
+                            <div className='add-task' style={{ position: "absolute", right: "37%", top: "20%", width:"380px", zIndex:"5"}}>
                                 <div className='d-flex justify-content-end'>
                                     <img className='closelogo' src={Close} alt="close logo" onClick={()=>{setTask(true)}} /> 
                                 </div> 
