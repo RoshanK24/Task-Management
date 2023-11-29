@@ -1,0 +1,17 @@
+.main-content::-webkit-scrollbar{
+    display: none;
+  }
+
+.home{
+    background-color: #BEFFF7;
+    height: 80vh;
+    
+}
+.main-content{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-height: 75vh;
+    overflow:scroll;
+}

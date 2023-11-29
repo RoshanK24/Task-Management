@@ -1,0 +1,42 @@
+.navbar{
+    background-color: #2E4374 !important;
+    color: white; 
+    height: 55px;
+}
+.nav1 .brand{
+    font-size: 25px;
+}
+.search{
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 30px;
+    width: 220px;
+}
+.searchbtn{
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 90px;
+    height: 30px;
+}
+.closelogo{
+    height: 22px;
+}
+.cartlogo{
+    height: 21px;
+}
+.searchlogo{
+    height: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.barslogo{
+    height: 25px;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.nav1 .searchfl{
+    background-color: rgb(34, 195, 157);
+}

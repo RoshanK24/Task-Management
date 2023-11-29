@@ -1,0 +1,18 @@
+.card-body{
+    background: rgb(34,195,71, 0.8);
+    background: linear-gradient(270deg, rgba(34,195,71,0.67) 0%, rgba(39,180,149,1) 35%, rgba(45,161,253,0.7) 100%); 
+    border-radius: 20px;
+}
+
+.card .card-content{
+    margin-left: 20px;
+}
+.card .card-content h5{
+    font-size: 28px;
+}
+.card .card-content div{
+    font-size: 15px;
+}
+.card .card-content .priority select{
+    font-size: 13px;
+}
